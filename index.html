@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- WAJIB untuk tampilan HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ITNAS TAILOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo-area">
+        <img src="images/logo.png" alt="Logo ITNAS TAILOR" class="logo">
+        <h1>ITNAS TAILOR & MODISTE</h1>
+    </div>
+    <nav>
+        <a href="#about">Tentang</a>
+        <a href="#services">Pelayanan</a>
+        <a href="#models">Model</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero fade">
+    <div class="hero-text">
+        <h2>Jasa Jahit Profesional & Terpercaya</h2>
+        <p>Kerapihan, Ketepatan, dan Kepuasan Pelanggan adalah Prioritas Kami</p>
+    </div>
+
+    <!-- AUTO SLIDESHOW HERO -->
+    <div class="hero-gallery">
+        <div class="hero-track">
+            <img src="images/gambar1.jpg">
+            <img src="images/gambar2.jpg">
+            <img src="images/gambar3.jpg">
+            <img src="images/gambar4.jpg">
+            <img src="images/gambar5.jpg">
+
+            <!-- DUPLIKAT UNTUK LOOP HALUS -->
+            <img src="images/gambar1.jpg">
+            <img src="images/gambar2.jpg">
+            <img src="images/gambar3.jpg">
+            <img src="images/gambar4.jpg">
+            <img src="images/gambar5.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section light fade">
+    <h2>Tentang Kami</h2>
+    <p>
+       ITNAS TAILOR & MODISTE adalah layanan jasa jahit profesional yang menghadirkan solusi busana pria dan wanita dengan standar kualitas terbaik. Kami mengutamakan detail, kerapihan jahitan, presisi ukuran, serta kenyamanan maksimal dalam setiap hasil karya. Didukung oleh pengalaman dan dedikasi tinggi, kami berkomitmen membantu Anda tampil lebih percaya diri dan berkelas di setiap kesempatan.
+    </p>
+</section>
+
+<section id="services" class="section fade">
+    <h2>Pelayanan Kami</h2>
+    <div class="service-box">
+        <div class="service-item">Kemeja Pria</div>
+        <div class="service-item">Celana Pria</div>
+        <div class="service-item">Seragam Sekolah</div>
+        <div class="service-item">Gamis</div>
+        <div class="service-item">Gaun Pesta</div>
+        <div class="service-item">Kebaya</div>
+        <div class="service-item">Baju Kerja</div>
+        <div class="service-item">JAS</div>
+        <div class="service-item">Payet Baju Wanita</div>
+        <div class="service-item">Baju Anak</div>
+    </div>
+</section>
+
+<section id="models" class="section light fade">
+    <h2>Model Baju</h2>
+
+    <!-- PRIA -->
+    <h3>Baju Pria</h3>
+    <div class="slider-wrapper">
+        <button class="slide-btn left" onclick="scrollSlider(this, -1)">❮</button>
+
+        <div class="premium-slider">
+            <img src="images/pria1.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/pria2.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/pria3.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/pria4.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/pria5.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/pria6.jpg" onclick="openLightbox(this.src)">
+            <img src="images/pria7.jpg" onclick="openLightbox(this.src)">
+            <img src="images/pria8.jpg" onclick="openLightbox(this.src)">
+
+        </div>
+
+        <button class="slide-btn right" onclick="scrollSlider(this, 1)">❯</button>
+    </div>
+
+<!-- WANITA -->
+<h3>Baju Wanita</h3>
+
+<div class="wanita-slider">
+
+    <!-- BARIS 1 -->
+    <div class="slider-wrapper">
+        <button class="slide-btn left" onclick="scrollRow(this, -1)">❮</button>
+
+        <div class="slider-row">
+            <img src="images/wanita1.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/wanita2.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/wanita3.jpeg" onclick="openLightbox(this.src)">
+            <img src="images/wanita4.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita5.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita6.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita7.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita8.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita9.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita10.jpg" onclick="openLightbox(this.src)">
+
+        </div>
+
+        <button class="slide-btn right" onclick="scrollRow(this, 1)">❯</button>
+    </div>
+
+    <!-- BARIS 2 -->
+    <div class="slider-wrapper">
+        <button class="slide-btn left" onclick="scrollRow(this, -1)">❮</button>
+
+        <div class="slider-row">
+            <img src="images/wanita11.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita12.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita13.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita14.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita15.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita16.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita17.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita18.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita19.jpg" onclick="openLightbox(this.src)">
+            <img src="images/wanita20.jpg" onclick="openLightbox(this.src)">
+
+        </div>
+
+        <button class="slide-btn right" onclick="scrollRow(this, 1)">❯</button>
+    </div>
+
+</section>
+
+<section id="contact" class="section fade">
+    <h2>Alamat & Kontak</h2>
+    <p>
+        📍 Jl. Baron KM., Karang Duwet II, Karangrejek, Kec. Wonosari,
+        Kabupaten Gunungkidul, Daerah Istimewa Yogyakarta 55851
+    </p>
+    <p>📱 WhatsApp: 087843180379</p>
+</section>
+
+<footer class="fade">
+    <p>
+        Terimakasih telah mempercayakan kebutuhan busana Anda kepada ITNAS Tailor & Modiste.
+Kami berkomitmen menghadirkan jahitan berkualitas, rapi, serta pelayanan terbaik demi kenyamanan dan kepuasan Anda.
+    </p>
+    <p>© 2026 ITNAS Tailor & Modiste</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

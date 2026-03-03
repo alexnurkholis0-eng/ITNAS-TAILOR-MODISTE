@@ -1,0 +1,391 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: #3e2723;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ffcc80;
+}
+
+
+/* =========================
+   HERO AUTO SLIDESHOW
+========================= */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 50px;
+}
+
+/* Text */
+.hero-text {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    color: #5d4037;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: #666;
+}
+
+/* Slideshow Container */
+.hero-gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Track */
+.hero-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: heroSlide 25s linear infinite;
+}
+
+/* Images */
+.hero-track img {
+    height: 280px; /* ubah kalau mau lebih besar */
+    border-radius: 15px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Animation */
+@keyframes heroSlide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =========================
+   SECTION UMUM
+========================= */
+.section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.light {
+    background: #f5f5f5;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #5d4037;
+}
+
+
+/* =========================
+   SERVICE MINIMAL PREMIUM
+========================= */
+
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.service-box div {
+    background: #6d4c41;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Elegant */
+.service-box div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #6d4c41, #8d6e63);
+}
+
+/* Luxury Shine Effect */
+.service-box div::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    width: 50%;
+    height: 300%;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(25deg);
+    transition: 0.6s;
+}
+
+.service-box div:hover::after {
+    left: 120%;
+}
+/* =========================
+   PREMIUM SLIDER (MODEL BAJU)
+========================= */
+
+/* Wrapper umum (pria & wanita tetap sama) */
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   SLIDER PRIA (TETAP 1 BARIS)
+========================= */
+.premium-slider {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 30px 10px;
+}
+
+.premium-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.premium-slider img {
+    height: 300px;
+    border-radius: 18px;
+    flex-shrink: 0;
+    transition: 0.4s ease;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    cursor: pointer;
+}
+
+.premium-slider img:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   SLIDER WANITA (2 BARIS)
+========================= */
+
+.wanita-slider {
+    display: flex;
+    flex-direction: column; /* jadi 2 baris */
+    gap: 25px;
+}
+
+.wanita-slider .slider-row {
+    display: flex;
+    gap: 25px;
+}
+
+.wanita-slider .slider-row img {
+    height: 300px;
+    border-radius: 18px;
+    flex-shrink: 0;
+    transition: 0.4s ease;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    cursor: pointer;
+}
+
+.wanita-slider .slider-row img:hover {
+    transform: scale(1.08);
+}
+
+/* =========================
+   SLIDER WANITA (PER BARIS)
+========================= */
+
+.wanita-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.wanita-slider .slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.wanita-slider .slider-row {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.wanita-slider .slider-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* =========================
+   ARROW BUTTON (UMUM)
+========================= */
+.slide-btn {
+    background: white;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.slide-btn:hover {
+    background: #e6d5c3;
+}
+/* =========================
+   GALLERY GRID
+========================= */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+    margin: 20px 0 40px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+#lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* =========================
+   FADE ANIMATION
+========================= */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    /* Navbar jadi vertikal */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Judul lebih kecil */
+    .hero h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    /* Service jadi 1 kolom */
+    .service-box {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    /* Gambar slider lebih kecil */
+    .slider img {
+        height: 250px;
+        object-fit: cover;
+    }
+}
